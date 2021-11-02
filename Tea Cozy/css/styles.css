@@ -1,0 +1,114 @@
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color:seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+}
+
+header {
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: black;
+}
+
+.logo {
+    margin: 10px;
+    height: 50px;
+    float: left;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    height: 100%;
+    float: right;
+}
+
+a { 
+    color: seashell;
+}
+
+main {
+    position: relative;
+    top: 62px;
+    z-index: 1;
+}
+
+#mission {
+    background-image: url(../media/img-mission-background.jpg);
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mission-h {
+    background-color: black;
+    padding: 10px;
+    margin: 0;
+}
+
+#tea {
+    width: 1000px;
+    margin: 60px auto;
+}
+
+.pick {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+figure {
+    margin: 15px;
+}
+.picks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#locations {
+    height: 500px;
+    width: 1200px;
+    margin: 0 auto;
+    background-image: url(../media/img-locations-background.jpg);
+}
+
+.locs {
+    display: flex;
+    justify-content: center;
+}
+
+.loc-h2 {
+    padding-top: 100px;
+    padding-bottom: 15px;
+    margin: 0;
+}
+
+.loc {
+    margin: 0 20px;
+    background-color: black;
+    opacity: 1;
+    width: 300px;
+}
+
+.contact {
+    height:200px;
+}
+
+.copyright {
+    float:left;
+    left: 20px;
+    font-size: 16px;
+}
