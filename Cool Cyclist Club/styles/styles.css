@@ -1,0 +1,141 @@
+body {
+    font-family: 'Zen Antique', serif;
+    background: #333333; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #333333, #dd1818); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333333, #dd1818); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: gainsboro;
+    text-align: center;
+}
+
+header {
+    background-color: rgb(32, 177, 177); 
+    height: 60px;
+    width: 100%;
+    position:fixed;
+    z-index: 5;
+}
+
+.logo {
+    float:left;
+    font-family: 'Pacifico', cursive;
+    font-size: 2.25em;
+    padding: 10px;
+    color: red;
+}
+nav {
+    float: right;
+    padding: 15px;
+    margin-top:3px;
+}
+
+nav a {
+    padding: 10px;
+    font-size: 1.5em; 
+    color: gainsboro;
+    text-decoration: none;
+    background-color: rgb(110, 38, 38);
+    border-radius: 15%;
+    margin: 0 5px;
+}
+
+main {
+    position: relative;
+    top: 61px;
+    z-index: 1;
+}
+
+#news {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.news {
+    display: flex;
+    width: 40%;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.news img {
+    width: 100%;
+}
+
+.news h2 {
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+.news aside {
+    height: 100px;
+}
+main .logo {
+    display:none;
+}
+@media only screen and (max-width: 800px) {
+    header .logo {
+        display: none;
+    }
+    main .logo {
+        display: block;
+    }
+    .banner {
+        width: 100%;
+        margin-bottom: 20px;
+        background-color: rgb(32, 177, 177);
+    }
+    nav {
+        float: none;
+    }
+    .news {
+        width: 100%;
+    }
+    #news { 
+        flex-direction: column;
+    }
+}
+
+#events {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+#events figure {
+    width: 500px;
+    margin:20px;
+}
+#events img {
+    width: 100%;
+}
+
+#photos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+#photos img {
+    width: 400px;
+    margin: 10px;
+}
+
+footer {
+    width: 100%;
+    background-color: gray;
+    height: 20px;
+    position: fixed;
+    z-index: 5;
+    bottom: 0;
+}
+
+footer p {
+    color: red;
+    float: right;
+}
